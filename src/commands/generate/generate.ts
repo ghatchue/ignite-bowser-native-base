@@ -8,9 +8,10 @@
 export const alias = ['g']
 export const run = () => {
   throw new Error(`
-    Error with "ignite generate" in ignite-bowser
+    Error with "ignite generate" in ignite-bowser-native-base
 
-    please report issue at https://github.com/infinitered/ignite
+    please report issue at
+      https://github.com/ghatchue/ignite-bowser-native-base
   `)
 }
 

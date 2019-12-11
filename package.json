@@ -1,9 +1,9 @@
 {
-  "name": "ignite-bowser",
-  "description": "Infinite Red's hot boilerplate for React Native.",
+  "name": "ignite-bowser-native-base",
+  "description": "Bowser boilerplate for React Native with Native Base components.",
   "license": "MIT",
-  "repository": "infinitered/ignite-bowser",
-  "homepage": "https://github.com/infinitered/ignite-bowser",
+  "repository": "ghatchue/ignite-bowser-native-base",
+  "homepage": "https://github.com/ghatchue/ignite-bowser-native-base",
   "version": "4.11.3",
   "files": [
     "boilerplate.js",
@@ -14,9 +14,9 @@
     "readme.md"
   ],
   "author": {
-    "name": "Infinite Red",
-    "email": "npm@infinite.red",
-    "url": "https://github.com/infinitered/ignite-bowser"
+    "name": "Gael Hatchue",
+    "email": "ghatchue@gmail.com",
+    "url": "https://github.com/ghatchue/ignite-bowser-native-base"
   },
   "scripts": {
     "format": "npm-run-all format:*",

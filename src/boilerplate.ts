@@ -66,10 +66,10 @@ export const install = async (toolbox: GluegunToolbox) => {
     if (parameters.options.detox === true) {
       // prettier-ignore
       if (isWindows) {
-          print.info("Skipping Detox because it is only supported on macOS, but you're running Windows")
-        } else {
-          print.info("Skipping Detox because it is only supported on macOS")
-        }
+        print.info("Skipping Detox because it is only supported on macOS, but you're running Windows")
+      } else {
+        print.info("Skipping Detox because it is only supported on macOS")
+      }
     }
   }
 
@@ -211,7 +211,7 @@ export const install = async (toolbox: GluegunToolbox) => {
     // Could be directory, npm@version, or just npm name.  Default to passed in values
     ignite.log("adding boilerplate to project for generator commands")
 
-    const boilerplate = parameters.options.b || parameters.options.boilerplate || "ignite-bowser"
+    const boilerplate = parameters.options.b || parameters.options.boilerplate || "ignite-bowser-native-base"
     await system.exec(`ignite add ${boilerplate} ${debugFlag}`)
 
     ignite.log("adding react-native-gesture-handler")
@@ -292,8 +292,8 @@ export const install = async (toolbox: GluegunToolbox) => {
   const androidInfo = isAndroidInstalled(toolbox)
     ? ""
     : `\n\nTo run in Android, make sure you've followed the latest react-native setup instructions at https://facebook.github.io/react-native/docs/getting-started.html before using ignite.\nYou won't be able to run ${bold(
-        "react-native run-android",
-      )} successfully until you have.`
+      "react-native run-android",
+    )} successfully until you have.`
 
   const successMessage = `
     ${red("Ignite CLI")} ignited ${yellow(name)} in ${gray(`${perfDuration}s`)}
@@ -310,8 +310,8 @@ export const install = async (toolbox: GluegunToolbox) => {
     ${bold("Now get cooking! 🍽")}
 
     ${gray(
-      "(Running yarn install one last time to make sure everything is installed -- please be patient!)",
-    )}
+    "(Running yarn install one last time to make sure everything is installed -- please be patient!)",
+  )}
   `
 
   print.info(successMessage)
